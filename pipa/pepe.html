@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="supported" lang="en">
+<head>
+
+  <!-- Application Title > Project
+  -------------------------------------------->
+  <title>Mint</title>
+
+  <!-- App Meta Details
+  -------------------------------------------->
+  <meta charset="UTF-8"> <!-- Default -->
+  <meta name="author" content="Abdelrahman Ashref">
+
+  <!-- Mobile Specific Metas
+  -------------------------------------------->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  -------------------------------------------->
+  <link rel="stylesheet" href="https://rodear.000webhostapp.com/pipa/onsenui.min.css">
+  <link rel="stylesheet" href="https://rodear.000webhostapp.com/pipa/onsen-css-components.min.css">
+
+  <!-- Jquery
+  -------------------------------------------->
+  <script type="text/javascript" src="https://rodear.000webhostapp.com/pipa/jquery.min.js"></script>
+
+<body>
+
+  <style>
+    a {
+      color: #35CC99;
+    }
+  </style>
+
+  <!-- home-page
+  -------------------------------------------->
+  <ons-page>
+
+    <ons-card style="margin-top: 20px;">
+
+      <div class="content" style="text-align: center">
+        <a href="https://picassos.link/notificationCampaign"><img src="http://assets.themintapp.com/demo/mint-demo-website/res/img/banner.png" alt="Cyber Monday Sale" style="width: 100%; margin-bottom: 6px;"></a>
+        The best multipurpose & webview application, equipped with remote configuration and the most diverse & powerful customization tools to start your Android journey with a bang!
+      </div>
+
+    </ons-card>
+
+    <p style="text-align: center; margin: 15px 25px 15px 25px;">
+      <small style="font-weight: 600;">Full Native Support for WebView</small>
+      <ons-search-input id="test-website" style="width: 100%; margin: 13px 0px 13px 0px;" placeholder="https:// enter your website link here..."></ons-search-input>
+      <style>
+        #test-website input {
+          height: 35px !important;
+        }
+      </style>
+      <small style="font-weight: 600;">Support for +10 Content Providers</small>
+    </p>
+
+    <div id="providers">
+      <style>
+        #providers {
+          text-align: center;
+          background-color: #35CC99;
+          margin: 8px;
+          opacity: .9;
+          padding: 16px;
+          border-radius: 8px;
+        }
+
+        #providers img {
+          vertical-align: middle;
+          width: 35px;
+          height: 35px;
+        }
+      </style>
+
+      <img onclick="app.donut_wordpress();" src="https://img.icons8.com/ios/100/FFFFFF/wordpress.png" style="margin-right: 15px;" />
+      <img onclick="app.donut_youtube();" src="https://img.icons8.com/ios/100/FFFFFF/youtube.png" style="margin-right: 15px;" />
+      <img onclick="app.donut_vimeo();" src="https://img.icons8.com/ios/100/FFFFFF/vimeo.png" style="margin-right: 15px;"/>
+      <img onclick="app.donut_pinterest();" src="https://img.icons8.com/ios/100/FFFFFF/pinterest.png" style="margin-right: 15px;" />
+      <img onclick="app.donut_facebook();" src="https://img.icons8.com/ios/100/FFFFFF/facebook-circled--v1.png" style="margin-right: 15px;"/>
+      <img onclick="app.donut_google_maps();" src="https://img.icons8.com/ios/100/FFFFFF/apple-map.png" />
+
+    </div>
+
+    <ons-card style="margin-top: 20px;">
+      <div class="content" style="text-align: center;">
+        Download & Upload Manager with Media Player
+        <ons-list modifier="inset" style="margin-top: 15px;">
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_downloads();">Open Downloads</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" id="download_video">Download Video</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" id="download_audio">Download Audio</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" id="upload_file">Upload File</ons-list-item>
+        </ons-list>
+      </div>
+    </ons-card>
+
+    <ons-card style="margin-top: 20px;">
+      <div class="content" style="text-align: center;">
+        Notifications & Dialogs
+        <ons-list modifier="inset" style="margin-top: 15px;">
+          <ons-list-item tappable modifier="longdivider" onclick="alert('a simple javascript alert function converted to a native alert dialog, used to inform users.');">Alert Dialog</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="confirm('a simple javascript confirm function converted to a native confirm dialog. used to get confirmation from users.');">Confirm Dialog</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="prompt('a simple prompt dialog.');">Prompt Dialog</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_toast('a simple toast text.');">Toast</ons-list-item>
+        </ons-list>
+      </div>
+    </ons-card>
+
+    <ons-card style="margin-top: 20px;">
+      <div class="content" style="text-align: center;">
+        Interactions & Intents
+        <ons-list modifier="inset" style="margin-top: 15px;">
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('tel:+201550281644', '_self');">Call</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('sms:+201550281644&body=Hello!', '_self');">Message</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('mailto:hello@picassos.xyz', '_self');">Email</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('market://details?id=com.picassos.mint.console.android', '_self');">Play Store</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('geo://?q=The+Great+Pyramid+Of+Giza', '_self');">Google Maps</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('vnd.chrome://www.youtube.com/watch?v=mTgxJFQGaYQ', '_self');">YouTube</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('browser://?q=The+Great+Pyramid+Of+Giza', '_self');">Facebook</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="window.open('twitter://user?user_id=382267114', '_self');">Twitter</ons-list-item>
+        </ons-list>
+        
+        <html><head><script type="text/javascript">function disp_alert(){if (confirm("click ok to continue"))  window.location.href = "link.html";}</script></head><body><input type="button" onclick="disp_alert()" value="would you like to continue?" /></body></html>
+        
+        
+         <ul><li><a href="https://example.com/homePage.html" rel="noopener noreferrer">Google Play Services</a></li><li><a href="https://example.com/homePage.html" rel="noopener noreferrer">AdMob</a></li><li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li><!----><li><a href="https://www.facebook.com/about/privacy/update/printable" target="_blank" rel="noopener noreferrer">Facebook</a></li><!----><!----><!----><!----><!----><!----><li><a href="https://unity3d.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity</a></li><!----><!----><li><a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener noreferrer">One Signal</a></li><!----><!----><li><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">AppLovin</a></li><!----><li><a href="https://www.startapp.com/privacy/" target="_blank" rel="noopener noreferrer">StartApp</a></li><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
+      </div>
+    </ons-card>
+
+    <ons-card style="margin-top: 20px;">
+      <div class="content" style="text-align: center;">
+        Google AdMob
+        <ons-list modifier="inset" style="margin-top: 15px;">
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_admob_native();">Native Ad Preview</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_admob_interstitial();">Interstitial Ad Preview</ons-list-item>
+        </ons-list>
+        <p style="margin-bottom: 0"><small>You can download a file to preview interstitial ads or openining premium links to preview rewarded ads.</small></p>
+      </div>
+    </ons-card>
+
+    <ons-card style="margin-top: 20px;">
+      <div class="content" style="text-align: center;">
+        Facebook Network Ads
+        <ons-list modifier="inset" style="margin-top: 15px;">
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_facebook_native();">Native Ad Preview</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_facebook_interstitial();">Interstitial Ad Preview</ons-list-item>
+        </ons-list>
+      </div>
+    </ons-card>
+
+    <ons-card style="margin-top: 20px;">
+      <div class="content" style="text-align: center;">
+        Dark Mode
+        <ons-list modifier="inset" style="margin-top: 15px;">
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_dark_mode_on();">Toggle Dark Mode On</ons-list-item>
+          <ons-list-item tappable modifier="longdivider" onclick="app.donut_dark_mode_off();">Toggle Dark Mode Off</ons-list-item>
+        </ons-list>
+      </div>
+    </ons-card>
+
+  </ons-page>
+
+  <!-- Plugins -->
+  <script src="https://rodear.000webhostapp.com/pipa/onsenui.min.js"></script>
+  <script src="https://rodear.000webhostapp.com/pipa/core.js"></script>
+
+</body>
+
+</html>

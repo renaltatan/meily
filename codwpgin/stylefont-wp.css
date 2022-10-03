@@ -64,7 +64,7 @@
 .mh-icon-zoom-in:before { content: '\e809'; } /* '&#59401;' */
 .mh-icon-right-open:before { content: '\e80a'; } /* '&#59402;' */
 .mh-icon-left-open:before { content: '\e80b'; } /* '&#59403;' */
-.mh-icon-close:before { content: '\e80c'; } /* '&#59404;' */
+/*.mh-icon-close:before { content: '\e80c'; } /* '&#59404;' */
 .mh-icon-ok:before { content: '\e80d'; } /* '&#59405;' */
 .mh-icon-right:before { content: '\e80e'; } /* '&#59406;' */
 .mh-icon-left:before { content: '\e80f'; } /* '&#59407;' */
